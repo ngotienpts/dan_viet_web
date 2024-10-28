@@ -1,0 +1,81 @@
+<svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Group_1902"
+                  data-name="Group 1902"
+                  transform="translate(-202 -99)"
+                >
+                  <rect
+                    id="Rectangle_1656"
+                    data-name="Rectangle 1656"
+                    width="24"
+                    height="24"
+                    transform="translate(202 99)"
+                    fill="#e8e8e8"
+                    opacity="0"
+                  ></rect>
+                  <g id="newspaper" transform="translate(205 101)">
+                    <g id="Group_1459" data-name="Group 1459">
+                      <g id="Group_1458" data-name="Group 1458">
+                        <path
+                          id="Path_718"
+                          data-name="Path 718"
+                          d="M80,158.761h4.681V154H80Zm1.6-3.161h1.48v1.56H81.6Z"
+                          transform="translate(-76.799 -145.838)"
+                          fill="#008837"
+                        ></path>
+                        <rect
+                          id="Rectangle_1493"
+                          data-name="Rectangle 1493"
+                          width="4.601"
+                          height="1.6"
+                          transform="translate(9.482 14.684)"
+                          fill="#008837"
+                        ></rect>
+                        <rect
+                          id="Rectangle_1495"
+                          data-name="Rectangle 1495"
+                          width="4.681"
+                          height="1.6"
+                          transform="translate(3.201 14.684)"
+                          fill="#008837"
+                        ></rect>
+                        <rect
+                          id="Rectangle_1496"
+                          data-name="Rectangle 1496"
+                          width="4.601"
+                          height="1.6"
+                          transform="translate(9.482 8.122)"
+                          fill="#008837"
+                        ></rect>
+                        <rect
+                          id="Rectangle_1498"
+                          data-name="Rectangle 1498"
+                          width="10.883"
+                          height="1.6"
+                          transform="translate(3.201 4.201)"
+                          fill="#008837"
+                        ></rect>
+                        <path
+                          id="Path_719"
+                          data-name="Path 719"
+                          d="M17.285,18.085V0H0V18.085a2.4,2.4,0,0,0,2.4,2.4H17.285C17.271,20.435,17.285,18.526,17.285,18.085Zm-14.884.8a.8.8,0,0,1-.8-.8V1.6H15.684V18.085c0,.28,0,.79,0,.8Z"
+                          fill="#008837"
+                        ></path>
+                        <rect
+                          id="Rectangle_1499"
+                          data-name="Rectangle 1499"
+                          width="4.601"
+                          height="1.6"
+                          transform="translate(9.482 11.322)"
+                          fill="#008837"
+                        ></rect>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
