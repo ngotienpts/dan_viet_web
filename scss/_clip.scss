@@ -1,0 +1,222 @@
+.clip-wrapper {
+  & .clip-top {
+    background-color: #202124;
+    border-top: 1px solid #484a4e;
+    color: #fff;
+    padding-bottom: 60px;
+  }
+
+  & .clip-heading {
+    font-size: 45px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    & i {
+      margin-bottom: -7px;
+      margin-right: 5px;
+    }
+  }
+
+  & .clip-large {
+    display: flex;
+
+    & .clip-large-img {
+      width: 70%;
+      flex-shrink: 0;
+    }
+
+    & .clip-large-content {
+      flex: 1;
+      padding: 20px 25px;
+      background-color: #6c6e70;
+      height: 478px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(183, 183, 183, 0.5);
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: none;
+      }
+
+      & .article-title {
+        font-size: 18px;
+      }
+
+      & .article-author {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      & .articles-time,
+      & .article-des {
+        font-size: 12px;
+        margin-bottom: 15px;
+        color: #bbb;
+        line-height: 1.5;
+      }
+      & .articles-btn {
+        display: flex;
+        align-items: flex-start;
+      }
+      & .btn-cmt {
+        font-size: 11px;
+        background-color: #444;
+        padding: 3px 8px 2px;
+        margin-left: 5px;
+
+        & i {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  & .clip-small {
+    & .clip-small__heading {
+      margin: 25px 0 15px;
+      font-weight: bold;
+      color: #f3f3f3;
+
+      &.see-more {
+        color: #202124;
+        font-size: 20px;
+      }
+    }
+
+    & .article-title {
+      font-size: 13px;
+      color: #6c6e70;
+      margin-top: 10px;
+    }
+
+    & .clip-small-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px 24px;
+    }
+  }
+  & .time {
+    position: absolute;
+    font-size: 11px;
+    right: 20px;
+    bottom: 15px;
+    background-color: #6c6e70;
+    color: #fff;
+  }
+}
+.--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle-play {
+  display: flex;
+  align-items: center;
+  position: relative;
+  & .toggle-label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #8f8f8f;
+  }
+  & .check {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 6;
+  }
+
+  & .check:checked ~ .toggle-bar .toggle-spin {
+    background-color: #008837;
+    right: 0;
+    left: auto;
+  }
+  & .toggle-bar {
+    width: 27px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #fff;
+    position: relative;
+  }
+  & .toggle-spin {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8f8f8f;
+    border-radius: 36px;
+    z-index: 1;
+    transition: 0.3s ease;
+  }
+}
+
+
+.box-cmt-clip {
+    padding: 10px 20px;
+    background: #e9eaee;
+
+    .cmt-heading {
+      color: #222;
+      font-size: 15px;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: none;
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-transform: none;
+    }
+
+    .Wrapper {
+      overflow: visible;
+      height: 1%;
+    }
+    .label {
+      display: block;
+      color: #333;
+      font-size: 13px;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      background: #fafafa;
+      color: #333;
+      font-size: 13px;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      outline: 0;
+      border: 1px solid #e1e1e1;
+      margin: 0 0 16px;
+    }
+    .txt-content {
+      height: 84px;
+    }
+    .btn {
+      color: #ccc;
+      font-size: 11px;
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #222;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+}

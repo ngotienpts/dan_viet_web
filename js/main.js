@@ -62,11 +62,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // header detail
   var headerDetail = document.querySelector(".header_detail");
 
+  // range radio
+  var ranges = document.querySelectorAll('input[type="range"]');
+  var playsRadio = document.querySelectorAll(".js__playRadio");
+  var volumsRadio = document.querySelectorAll(".js__radioVolum");
+
 
   // swiper
   const oneSlides = document.querySelectorAll(".js__oneSlidesContainer");
   const autoSlides = document.querySelectorAll(".js__autoSlideContainer");
   const threeSlides = document.querySelectorAll(".js__threeSlidesContainer");
+
+
+  // fillter search
+  const dropDownContainers = document.querySelectorAll(".js__dropDownContainer");
 
 
 
@@ -188,6 +197,65 @@ document.addEventListener("DOMContentLoaded", function () {
           breadcumList.classList.toggle("show");
         };
       }
+
+      // ranges
+      if (ranges) {
+        ranges.forEach(function (input) {
+            var valueRange = input.value + "%";
+            var maxRange = input.max + "%";
+            input.style.backgroundSize = `${valueRange} ${maxRange}`;
+            input.oninput = function (e) {
+                var min = e.target.min;
+                var max = e.target.max;
+                var val = e.target.value;
+                e.target.style.backgroundSize =
+                    ((val - min) * 100) / (max - min) + "% 100%";
+            };
+        });
+      }
+      if (playsRadio) {
+        playsRadio.forEach((playRadio) => {
+            playRadio.onclick = function () {
+                this.classList.toggle("active");
+            };
+        });
+      }
+      if (volumsRadio) {
+          volumsRadio.forEach((volumRadio) => {
+              volumRadio.onclick = function () {
+                  this.classList.toggle("active");
+              };
+          });
+      }
+
+      // filter search
+      if(dropDownContainers){
+        if(dropDownContainers.length === 0) return
+
+        dropDownContainers.forEach((dropDownContainer)=>{
+          const showDropDown = dropDownContainer.querySelector('.js__showDropDown')
+          const filterDropDownItems = dropDownContainer.querySelectorAll('.js__filterDropdownItem')
+
+          showDropDown.onclick = function() {
+            dropDownContainer.classList.toggle('active')
+          }
+          if(filterDropDownItems.length === 0) return;
+
+          let currentActive = dropDownContainer.querySelector('.js__filterDropdownItem.active');
+
+          filterDropDownItems.forEach((filterDropDownItem)=>{
+
+            filterDropDownItem.onclick = function() {
+              if(currentActive){
+                currentActive.classList.remove('active')
+              }
+              this.classList.add('active')
+              currentActive = this
+             
+            }
+          })
+        })
+      }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {
         if (menuPc && btnMenu) {
@@ -202,6 +270,36 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
 
+
+    // Xử lý tăng giảm font size
+    handleChangeFontSize: function() {
+      var sizeDefaults = document.querySelectorAll('.size-default');
+      var sizePlus = document.querySelectorAll('.size-plus');
+      if(sizePlus.length > 0 && sizeDefaults.length > 0){
+        size = parseInt(window.getComputedStyle(document.querySelector(".js_change_size")).fontSize, 10);
+        size2 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size2")).fontSize, 10);
+        size3 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size3")).fontSize, 10);
+
+        sizePlus.forEach((item)=>{
+          item.onclick = function(){
+            document.querySelector(".js_change_size").style.fontSize = (size + 2) + "px";
+            document.querySelector(".js_change_size2").style.fontSize = (size2 + 2) + "px";
+            document.querySelector(".js_change_size3").style.fontSize = (size3 + 2) + "px";
+            document.querySelector(".js_change_size3").classList.add('plusSize');
+          }
+        })
+
+        sizeDefaults.forEach((item)=>{
+          item.onclick = function(){
+            document.querySelector(".js_change_size").style.fontSize = size + "px";
+            document.querySelector(".js_change_size2").style.fontSize = size2 + "px";
+            document.querySelector(".js_change_size3").style.fontSize = size3 + "px";
+            document.querySelector(".js_change_size3").classList.remove('plusSize');
+          }
+        })
+      }
+
+    },
     // slide topic list
     slideToppicList: function () {
       $(".topic-hot-mb__content").slick({
@@ -430,6 +528,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.initSliderAutoItems();
       // slide three item
       this.initSliderThreeItems();
+      // change font size
+      this.handleChangeFontSize();
       
     },
   };
