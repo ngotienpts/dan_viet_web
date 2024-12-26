@@ -3196,6 +3196,10 @@ header #nav .icon-expandmenu.active {
   margin-left: -30px;
 }
 
+.four-list .four-item:nth-child(n+4) {
+  display: none;
+}
+
 .box-cmt-detail {
   padding-bottom: 20px;
   border-bottom: 2px solid #e9e9e9;
@@ -6067,6 +6071,10 @@ input#_login_email {
   }
 
   /*====================================================================== detail*/
+  .four-list .four-item:nth-child(n+4) {
+    display: block;
+  }
+
   .detail-main .line-datetime > span.anots:before {
     content: none;
   }

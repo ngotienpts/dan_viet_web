@@ -778,6 +778,13 @@
     }
   }
   /*====================================================================== detail*/
+  .four-list {
+    .four-item {
+      &:nth-child(n+4){
+        display: block;
+      }
+    }
+  }
   .detail-main {
     .line-datetime {
       & > span.anots {
