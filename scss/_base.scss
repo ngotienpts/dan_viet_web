@@ -682,3 +682,18 @@ img {
 .border-b-c3 {
   border-bottom: 1px solid #c3c3c3;
 }
+
+.d-3xl-flex {
+  display: flex;
+}
+
+.flex-0 {
+  flex-shrink: 0;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.w-40 {
+  width: 40%;
+}
