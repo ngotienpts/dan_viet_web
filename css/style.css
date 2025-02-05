@@ -2430,6 +2430,26 @@ header #nav .icon-expandmenu.active {
   padding: 15px 0;
   margin-bottom: 25px;
 }
+.widget-hometop--pt-0 {
+  padding-top: 0;
+}
+.widget-agriculture {
+  position: relative;
+}
+.widget-agriculture .widget-heading {
+  position: relative;
+}
+.widget-agriculture .widget-content {
+  position: relative;
+}
+.widget-agriculture__bg {
+  position: absolute;
+  inset: 0;
+}
+.widget-agriculture__bg img {
+  height: 100%;
+  width: 100%;
+}
 
 .media-home {
   background-color: #f9f9f9;

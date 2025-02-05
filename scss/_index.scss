@@ -610,6 +610,32 @@
   background-color: #f9f9f9;
   padding: 15px 0;
   margin-bottom: 25px;
+
+  &-hometop--pt-0 {
+    padding-top: 0;
+  }
+
+  &-agriculture {
+    position: relative;
+
+    .widget-heading {
+      position: relative;
+    }
+
+    .widget-content {
+      position: relative;
+    }
+
+    &__bg {
+      position: absolute;
+      inset: 0;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // media
