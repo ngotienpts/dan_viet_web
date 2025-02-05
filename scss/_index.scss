@@ -32,7 +32,45 @@
   fill: #008837;
 }
 
+.section-primary {
+  display: grid;
+  grid-template-columns: 300px 1fr 270px;
+  grid-gap: 20px;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
 
+  &__left {
+    .article {
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e5e5;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+  &__right {
+    .article {
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e5e5;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}
+.d-3xl-flex {
+  display: flex;
+}
 // main block
 .main-block {
   margin-bottom: 45px;
