@@ -468,6 +468,11 @@
 .entry-body p {
   margin-bottom: 15px;
 }
+ figure {
+  margin-bottom: 15px;
+
+}
+
 .dt-content figure figcaption {
   display: block;
   padding: 10px;
@@ -479,7 +484,6 @@
   background-color: #f2f2f2;
   max-width: 100%;
   line-height: 18px;
-  margin-bottom: 15px;
   & .expEdit {
     font-weight: normal;
     margin: 0;
@@ -1308,4 +1312,106 @@ input[type="range"]::-moz-range-thumb {
 
 figure + figure {
   margin-top: 20px;
+}
+
+.boxsamethread {
+  margin: 20px 0;
+  padding: 0 20px 30px;
+  border: solid 1px #e1e4ed;
+  border-radius: 3px;
+  position: relative;
+  background-color: #fbfcff;
+
+  .titlebox {
+    display: inline-block;
+    border-bottom: solid 1px #c90000;
+    margin-bottom: 24px;
+    font: normal 15px/21px RobotoBold;
+    color: #979ba7;
+    text-transform: uppercase;
+    padding: 20px 4px 6px 0;
+  }
+  .titlebox span {
+    color: #000;
+  }
+  .lts-news {
+    padding-left: 20px;
+    border-left: solid 1px #d2d2d2;
+  }
+  .lts-item {
+    position: relative;
+    top: -2px;
+    margin-bottom: 15px;
+    line-height: 18px;
+  }
+  .lts-item:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    left: -23px;
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+  }
+  .lts-item a {
+    color: #2a4a84;
+    font-size: 13px;
+  }
+
+  .viewall {
+    font: normal 11px Arial;
+    color: #959595;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+  
+}
+
+.action-meeting {
+  &-pc {
+    .time-right {
+      padding-left: 0 !important;
+    }
+    .time-right__top-title {
+      font-size: 14px !important;
+      color: #c62127;
+      font-weight: bold !important;
+    }
+
+    .note {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: #118b81;
+    }
+
+    .timeline-content p {
+      font-size: 16px !important;
+    }
+  }
+
+  &-mb {
+    .timeline-item__top-text {
+      background-color: transparent !important;
+      color: #202124 !important;
+      font-size: 14px !important;
+      font-weight: normal !important;
+    }
+
+    .note {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Arial';
+      margin: 8px 0;
+      padding: 0 10px;
+      line-height: 1.7;
+    }
+
+    .timeline-content p {
+      font-family: 'Arial' !important;
+    }
+  }
 }
