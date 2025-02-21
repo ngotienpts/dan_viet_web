@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropDownContainers = document.querySelectorAll(".js__dropDownContainer");
 
 
-
   // show hide sticky detail
   var stickyStart = document.querySelector(".sticky-start");
   var stickyEnd = document.querySelector(".sticky-end");
@@ -256,6 +255,12 @@ document.addEventListener("DOMContentLoaded", function () {
           })
         })
       }
+
+
+      // match action
+
+      
+
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {
         if (menuPc && btnMenu) {
@@ -299,6 +304,84 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       }
 
+    },
+    // match action pc
+    handleMatchAction: function() {
+
+    const matchActions = document.querySelectorAll('.js__matchAction');
+    if (matchActions.length === 0) return;
+
+    matchActions.forEach((matchAction)=>{
+      const latest = matchAction.querySelector('.js__latest')
+      const shorten = matchAction.querySelector('.js__shorten')
+      const timeLineContainer = matchAction.querySelector('.js__timeLineContainer')
+      const timeLineActionContainers = matchAction.querySelectorAll('.js__timeLineActionContainer')
+      
+      if (timeLineActionContainers.length === 0) return;
+      
+      timeLineActionContainers.forEach(container => {
+        const timeLineAction = container.querySelector('.js__timeLineAction');
+        if (timeLineAction) {
+            timeLineAction.onclick = () => {
+                const isActive = container.classList.toggle('action');
+                timeLineAction.querySelector('.text').innerText = isActive ? 'Rút gọn' : 'Xem chi tiết';
+            };
+        }
+    });
+
+
+      if(latest){
+        latest.onclick = function() {
+          this.innerText = this.innerText === 'Xem mới nhất' ? 'Xem cũ nhất' : 'Xem mới nhất';
+          let items = Array.from(timeLineContainer.children); 
+          items.reverse().forEach(item => timeLineContainer.appendChild(item));
+        }
+      }
+
+      if(shorten){
+        shorten.onclick = function() {
+          const isShortened = this.innerText === 'Rút gọn';
+            this.innerText = isShortened ? 'Xem chi tiết' : 'Rút gọn';
+
+          timeLineActionContainers.forEach((timeLineActionContainer)=>{
+
+          const timeLineAction = timeLineActionContainer.querySelector('.js__timeLineAction')
+
+          if(timeLineActionContainer.classList.contains('action')){
+            timeLineActionContainer.classList.remove('action')
+            timeLineAction.querySelector('.text').innerText = 'Xem chi tiết'
+          } else {
+            timeLineActionContainer.classList.add('action')
+            timeLineAction.querySelector('.text').innerText = 'Rút gọn'
+          }
+
+          })
+        }
+      }
+    })
+      
+    },
+
+    // match action mb
+    handleMatchActionMb: function() {
+
+    const matchActions = document.querySelectorAll('.js__matchActionMb');
+    if (matchActions.length === 0) return;
+
+    matchActions.forEach((matchAction)=>{
+      const sortAll = matchAction.querySelector('.js__sortAll')
+      const timeLineContainer = matchAction.querySelector('.js__timeLineContainer')
+    
+
+      if(sortAll){
+        sortAll.onclick = function() {
+          let items = Array.from(timeLineContainer.children); 
+          items.reverse().forEach(item => timeLineContainer.appendChild(item));
+        }
+      }
+
+    })
+      
     },
     // slide topic list
     slideToppicList: function () {
@@ -530,6 +613,9 @@ document.addEventListener("DOMContentLoaded", function () {
       this.initSliderThreeItems();
       // change font size
       this.handleChangeFontSize();
+      // match action
+      this.handleMatchAction();
+      this.handleMatchActionMb();
       
     },
   };

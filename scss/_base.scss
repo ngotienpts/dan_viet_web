@@ -655,6 +655,15 @@ img {
 .justify-content-center {
   justify-content: center;
 }
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
 .flex-0 {
   flex-shrink: 0;
 }
@@ -685,6 +694,9 @@ img {
 
 .d-3xl-flex {
   display: flex;
+}
+.d-3xl-none {
+  display: none;
 }
 
 .flex-0 {

@@ -949,6 +949,30 @@
     }
 }
   /*====================================================================== contact*/
+  /*====================================================================== live score*/
+  .live-score {
+    .box-match {
+      &__team {
+          width: 35%;
+      }
+      &__flag {
+        img {
+            width: 60px;
+        }
+      }
+      .score-now {
+        .score-a,
+        .score-b,
+        .hyphen {
+          font-size: 32px;
+        }
+      }
+
+      &__info {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 // danh cho man hinh duoi 400px
