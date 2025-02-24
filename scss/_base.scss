@@ -111,6 +111,10 @@ img {
   max-width: 1140px;
   margin: 0 auto;
 }
+.w-1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .w-100 {
   width: 100%;
 }
@@ -692,6 +696,9 @@ img {
   border-bottom: 1px solid #c3c3c3;
 }
 
+.d-3xl-block {
+  display: block;
+}
 .d-3xl-flex {
   display: flex;
 }

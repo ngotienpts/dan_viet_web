@@ -256,6 +256,11 @@ img {
   margin: 0 auto;
 }
 
+.w-1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -971,6 +976,10 @@ img {
 
 .border-b-c3 {
   border-bottom: 1px solid #c3c3c3;
+}
+
+.d-3xl-block {
+  display: block;
 }
 
 .d-3xl-flex {
@@ -1840,6 +1849,11 @@ header #nav .icon-expandmenu.active {
   width: 15px;
   height: 15px;
 }
+.header-radio .icon-searchWhite {
+  background: url("../images/svg/icon_search-white.svg") no-repeat;
+  width: 15px;
+  height: 15px;
+}
 
 .header-radio-mb {
   background-color: #86b93a !important;
@@ -1851,6 +1865,13 @@ header #nav .icon-expandmenu.active {
   background: url("../images/danviet_logocate.png");
   width: 168px;
   height: 28px;
+}
+
+.society-and-life-search {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .w-wrapper,
@@ -4630,6 +4651,7 @@ figure + figure {
 }
 
 .ema-header-pc {
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4651,6 +4673,7 @@ figure + figure {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   font-family: "Century", sans-serif;
   text-transform: capitalize;
 }
@@ -4756,6 +4779,151 @@ figure + figure {
 .ema-likeshare .text {
   color: #fff;
   font-size: 10px;
+}
+
+.society-and-life-author-primary {
+  margin-bottom: 30px;
+}
+.society-and-life-author-primary__container {
+  overflow: hidden;
+}
+.society-and-life-author-primary__bg img {
+  height: max(100vh, 800px);
+  width: 100%;
+  object-fit: cover;
+}
+.society-and-life-author-primary__content {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1570px;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+}
+.society-and-life-author-primary__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+}
+.society-and-life-author-primary__left {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.society-and-life-author-primary__left .title-1 {
+  color: #fff;
+  line-height: 1.4;
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  margin-bottom: 10px;
+}
+.society-and-life-author-primary__left .title-2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.society-and-life-author-primary .social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.society-and-life-author-primary .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  margin-right: 15px;
+}
+.society-and-life-author-primary .social-link img {
+  width: auto;
+  height: 18px;
+}
+.society-and-life-author-primary__right {
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.society-and-life-author-primary__right .title-3 {
+  font-family: "Roboto";
+  font-size: 24px;
+  padding-top: 0;
+  border-top: none;
+  color: #ffc107;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+.society-and-life-author-primary__right .title-3::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  height: 15px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/svg/topic-box-title.svg");
+}
+.society-and-life-author-primary .sapo {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  line-height: 1.618;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1200px;
+  min-height: 30px;
+}
+
+.header-society-and-life-author-mb .header-talk-mb {
+  height: 52px;
+}
+.header-society-and-life-author-mb .ema-mb-heading {
+  font-size: 15px;
+}
+.header-society-and-life-author-mb #search-form-mb {
+  top: 52px;
+  background: #202124;
+}
+
+.title-lien-quan {
+  font-family: "Roboto";
+  font-size: 24px;
+  padding-top: 0;
+  border-top: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 60px;
+}
+.title-lien-quan::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -20px;
+  height: 15px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/svg/topic-box-title.svg");
 }
 
 .detail-images {
@@ -6101,6 +6269,42 @@ input#_login_email {
     padding-top: 30px;
   }
 
+  .title-lien-quan {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .society-and-life-author-primary__content {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: unset;
+    padding: 0;
+  }
+  .society-and-life-author-primary__inner {
+    display: block;
+    width: 100%;
+  }
+  .society-and-life-author-primary__bg::after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0) 0%, rgba(128, 0, 0, 0) 50%, maroon 100%);
+    inset: 0;
+  }
+  .society-and-life-author-primary__left {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .society-and-life-author-primary__left .title-1 {
+    font-size: 32px;
+  }
+  .society-and-life-author-primary__right {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
   /*-------------------------------------------------------------detail*/
   .box-cmt {
     padding-left: 15px;
@@ -6543,6 +6747,26 @@ input#_login_email {
     color: #202124;
     margin-top: 10px;
     font-weight: bold;
+  }
+
+  .society-and-life-author-primary {
+    padding-top: 12px;
+  }
+  .society-and-life-author-primary__container {
+    background-color: #800000;
+  }
+  .society-and-life-author-primary__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .society-and-life-author-primary__bg img {
+    height: 100vh;
+  }
+  .society-and-life-author-primary__content {
+    position: relative;
+    padding-top: 60vh;
   }
 
   /*====================================================================== detail*/
