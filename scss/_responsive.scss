@@ -972,6 +972,27 @@
     margin-left: 0 !important;
     float: unset;
   }
+
+  .photo-story-info {
+    flex-direction: column;
+
+    &__img {
+      img {
+        height: 16px;
+        order: 1;
+      }
+    }
+
+    &__author {
+      order: 2;
+      margin-top: 8px;
+    }
+
+    &__right {
+      order: 3;
+      margin-top: 4px;
+    }
+  }
   /*====================================================================== search*/
   /*====================================================================== detail image*/
   figure.expNoEdit[type="Photo"] {

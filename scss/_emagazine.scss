@@ -25,6 +25,14 @@
   font-family: "Century",sans-serif;
   text-transform: capitalize;
 }
+.photo-story-mb-heading {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto";
+  text-transform: capitalize;
+}
 .ema-share-heading {
   color: #fff;
   font: normal 12px/21px Roboto;
@@ -283,4 +291,64 @@
     background-repeat: no-repeat;
     background-image: url('../images/svg/topic-box-title.svg');
 }
+}
+
+.photo-story-info {
+  &-wrap {
+    position: relative;
+  }
+  &-content {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-44.62%, hsla(0, 0%, 100%, 0)), color-stop(56.31%, hsla(0, 0%, 100%, .9)));
+      background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) -44.62%, hsla(0, 0%, 100%, .9) 56.31%);
+      bottom: 20px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+
+  &-top {
+    
+  }
+
+    &__author {
+      color: #2a2a2a;
+      font-family: NotoSerif-Bold;
+      font-size: 15px;
+      line-height: 15px;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    &__img {
+      img {
+        height: 33px;
+        width: auto;
+      }
+    }
+
+    &__right {
+      font-size: 14px;
+      font-family: 'Arial';
+    }
+
+    &__cate {
+      position: relative;
+      font-weight: bold;
+      &::after {
+        content: "|";
+        display: inline-block;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
 }

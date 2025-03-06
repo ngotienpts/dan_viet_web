@@ -4678,6 +4678,15 @@ figure + figure {
   text-transform: capitalize;
 }
 
+.photo-story-mb-heading {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto";
+  text-transform: capitalize;
+}
+
 .ema-share-heading {
   color: #fff;
   font: normal 12px/21px Roboto;
@@ -4924,6 +4933,54 @@ figure + figure {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../images/svg/topic-box-title.svg");
+}
+
+.photo-story-info-wrap {
+  position: relative;
+}
+.photo-story-info-content {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-44.62%, rgba(255, 255, 255, 0)), color-stop(56.31%, rgba(255, 255, 255, 0.9)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -44.62%, rgba(255, 255, 255, 0.9) 56.31%);
+  bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.photo-story-info__author {
+  color: #2a2a2a;
+  font-family: NotoSerif-Bold;
+  font-size: 15px;
+  line-height: 15px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+.photo-story-info__img img {
+  height: 33px;
+  width: auto;
+}
+.photo-story-info__right {
+  font-size: 14px;
+  font-family: "Arial";
+}
+.photo-story-info__cate {
+  position: relative;
+  font-weight: bold;
+}
+.photo-story-info__cate::after {
+  content: "|";
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .detail-images {
@@ -6865,6 +6922,22 @@ input#_login_email {
     max-width: 100%;
     margin-left: 0 !important;
     float: unset;
+  }
+
+  .photo-story-info {
+    flex-direction: column;
+  }
+  .photo-story-info__img img {
+    height: 16px;
+    order: 1;
+  }
+  .photo-story-info__author {
+    order: 2;
+    margin-top: 8px;
+  }
+  .photo-story-info__right {
+    order: 3;
+    margin-top: 4px;
   }
 
   /*====================================================================== search*/
