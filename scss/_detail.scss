@@ -1415,3 +1415,32 @@ figure + figure {
     }
   }
 }
+
+.list-bread {
+  .swiper-slide {
+    width: auto !important;
+  }
+
+  & .swiper-slide {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    white-space: nowrap;
+    color: rgba(112, 112, 112, 0.29);
+
+    & a {
+      padding: 0 8px;
+      color: #8f8f8f;
+      display: inline-block;
+      &:hover,
+      &:active {
+        color: #008837;
+      }
+    }
+    &:not(:last-child):after {
+      content: "/";
+      display: inline-block;
+    }
+  }
+}
+
