@@ -3146,6 +3146,11 @@ header #nav .icon-expandmenu.active {
   margin-right: 5px;
 }
 
+.video-form-dv .article-number {
+  color: #008837;
+  margin-right: 5px;
+}
+
 .danviet-tv-mb .boxbot-right-content .boxbot-right-title {
   margin-left: 0;
 }
@@ -3272,6 +3277,140 @@ header #nav .icon-expandmenu.active {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.video-form-dv .w-840 {
+  max-width: 840px;
+}
+
+.video-form-dv .over-hidden,
+.video-form-dv.over-hidden {
+  overflow: hidden;
+}
+
+.video-form-dv .z-10 {
+  z-index: 10;
+}
+
+.video-form-dv .relative,
+.video-form-dv.relative {
+  position: relative;
+}
+
+.video-form-dv .my-24 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.video-form-dv .py-16 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.video-form-dv .bg-yellow-e5,
+.video-form-dv.bg-yellow-e5 {
+  background-color: #e5dbc1;
+}
+
+.video-form-dv .w-1140 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.video-form-dv .gap-24 {
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+}
+
+.video-form-dv .col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.video-form-dv .pt-24 {
+  padding-top: 1.5rem;
+}
+
+.video-form-dv .d-3xl-grid {
+  display: grid;
+}
+
+.video-form-dv .colspan-2 {
+  grid-column: span 2;
+}
+
+.video-form-dv .colspan-1 {
+  grid-column: span 1;
+}
+
+.video-form-dv .gap-24 {
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+}
+
+.video-form-dv .col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.video-form-dv .play-large {
+  position: absolute;
+  width: 64px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-form-dv .play-large img {
+  width: 16px;
+  height: auto;
+}
+
+.video-form-dv .mt-8 {
+  margin-top: 0.5rem;
+}
+
+.video-form-dv .lh-130 {
+  line-height: 130%;
+}
+
+.video-form-dv .fw-600 {
+  font-weight: 600;
+}
+
+.video-form-dv .fs-16 {
+  font-size: 1rem;
+}
+
+.video-form-dv .flex-1 {
+  flex: 1;
+}
+
+.video-form-dv .pl-12 {
+  padding-left: 0.75rem;
+}
+
+.video-form-dv .text-gray-66 {
+  color: #666;
+}
+
+.video-form-dv .fs-14 {
+  font-size: 0.875rem;
+}
+
+.video-form-dv .fix-text2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-form-dv .fw-600 {
+  font-weight: 600;
 }
 
 @media (max-width: 992px) {
