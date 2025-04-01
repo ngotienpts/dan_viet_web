@@ -889,6 +889,12 @@ header {
     width: 15px;
     height: 15px;
   }
+
+  .icon-searchWhite {
+    background: url('../images/svg/icon_search-white.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .header-radio-mb {
@@ -903,4 +909,11 @@ header {
     width: 168px;
     height: 28px;
 }
+}
+
+.society-and-life-search {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }

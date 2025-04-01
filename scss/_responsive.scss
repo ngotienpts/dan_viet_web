@@ -326,6 +326,48 @@
       padding-top: 30px;
     }
   }
+  .title-lien-quan {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .society-and-life-author-primary {
+    &__content {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: unset;
+      padding: 0;
+    }
+    &__inner {
+      display: block;
+      width: 100%;
+    }
+
+    &__bg {
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: linear-gradient(to bottom, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0) 0%, rgba(128, 0, 0, 0) 50%, maroon 100%);
+        inset: 0;
+      }
+    }
+
+    &__left {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      .title-1 {
+        font-size: 32px;
+      }
+    }
+    &__right {
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
   /*-------------------------------------------------------------detail*/
   .box-cmt {
     padding-left: 15px;
@@ -777,6 +819,28 @@
       }
     }
   }
+
+  .society-and-life-author-primary {
+    padding-top: 12px;
+    &__container {
+      background-color: #800000;
+    }
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      img {
+        height: 100vh;
+      }
+    }
+
+    &__content {
+      position: relative;
+      padding-top: 60vh;
+    }
+  }
   /*====================================================================== detail*/
   .four-list {
     .four-item {
@@ -908,6 +972,27 @@
     margin-left: 0 !important;
     float: unset;
   }
+
+  .photo-story-info {
+    flex-direction: column;
+
+    &__img {
+      img {
+        height: 16px;
+        order: 1;
+      }
+    }
+
+    &__author {
+      order: 2;
+      margin-top: 8px;
+    }
+
+    &__right {
+      order: 3;
+      margin-top: 4px;
+    }
+  }
   /*====================================================================== search*/
   /*====================================================================== detail image*/
   figure.expNoEdit[type="Photo"] {
@@ -949,6 +1034,30 @@
     }
 }
   /*====================================================================== contact*/
+  /*====================================================================== live score*/
+  .live-score {
+    .box-match {
+      &__team {
+          width: 35%;
+      }
+      &__flag {
+        img {
+            width: 60px;
+        }
+      }
+      .score-now {
+        .score-a,
+        .score-b,
+        .hyphen {
+          font-size: 32px;
+        }
+      }
+
+      &__info {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 // danh cho man hinh duoi 400px
