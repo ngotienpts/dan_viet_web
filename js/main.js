@@ -83,6 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var stickyEnd = document.querySelector(".sticky-end");
   var stickyEl = document.querySelector(".sticky-ele");
 
+  const fancyboxes = document.querySelectorAll(".fancybox-full");
+
+  console.log(fancyboxes)
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -275,6 +279,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
 
+     // Khởi tạo fancybox
+      initFancybox: function() {
+      if (fancyboxes) {
+          fancyboxes.forEach(function () {
+              $(".fancybox-full a").fancybox();
+          });
+      }
+  },
 
     // Xử lý tăng giảm font size
     handleChangeFontSize: function() {
@@ -616,6 +628,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // match action
       this.handleMatchAction();
       this.handleMatchActionMb();
+      this.initFancybox();
       
     },
   };
