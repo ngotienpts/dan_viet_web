@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // swiper
   const oneSlides = document.querySelectorAll(".js__oneSlidesContainer");
   const autoSlides = document.querySelectorAll(".js__autoSlideContainer");
+  const noAutoScrollSlides = document.querySelectorAll(".js__noAutoScrollSlideContainer");
   const threeSlides = document.querySelectorAll(".js__threeSlidesContainer");
 
 
@@ -85,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const fancyboxes = document.querySelectorAll(".fancybox-full");
 
-  console.log(fancyboxes)
 
   const app = {
     // su ly cac su kien
@@ -480,6 +480,25 @@ document.addEventListener("DOMContentLoaded", function () {
                   autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
+                  },
+              });
+          });
+      }
+    },
+    // khởi tạo slider với nhiều item có width auto ko tự động chạy
+     initSliderNoAutoScrollItems: function() {
+      if (noAutoScrollSlides) {
+          noAutoScrollSlides.forEach((item) => {
+              var slider = item.querySelector(".js__swiperAuto");
+              var next = item.querySelector(".swiper-button-next");
+              var prev = item.querySelector(".swiper-button-prev");
+              new Swiper(slider, {
+                  slidesPerView: "auto",
+                  spaceBetween: 0,
+                  loop:true,
+                  navigation: {
+                      nextEl: next || null,
+                      prevEl: prev || null,
                   },
               });
           });
